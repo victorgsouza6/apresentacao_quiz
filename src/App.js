@@ -1,23 +1,20 @@
-import logo from './logo.svg';
+import React, {useState} from 'react'
 import './App.css';
 
+import Inicio from './Inicio';
+
 function App() {
+
+  const [tela, alteraTela] = useState(null)
+
+  if(tela == null){
+    alteraTela(<Inicio alteraTela={alteraTela}/>)
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      {tela}
+      
     </div>
   );
 }
