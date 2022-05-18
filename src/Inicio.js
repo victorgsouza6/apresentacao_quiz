@@ -3,8 +3,10 @@ const Inicio = ( props ) => {
     const alteraTela = props.alteraTela
     return ( 
         <div>
-            <h1> Bem-vindo ao quiz da Disney </h1>
-            <button onClick={() => alteraTela(<Questoes alteraTela={alteraTela}/>)}> Começar </button>
+            <h1> Bem-vindo ao quix da disney</h1>
+        <div className='inicio'> 
+            <button className="botaoInicio" onClick={() => alteraTela(<Questoes alteraTela={alteraTela}/>)}> Começar </button>
+        </div>
         </div>
         
 

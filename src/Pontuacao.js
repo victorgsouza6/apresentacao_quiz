@@ -1,11 +1,14 @@
 const Pontuacao = ( props ) => {
     const pontuacao = props.pontuacao
+    const questoes = props.questoes
+    const perguntaAtual = props.perguntaAtual
 
     return ( 
         <div className='quiz'>
-            <h1> Disney Quiz </h1>
 
+            <h2>Questão {perguntaAtual + 1} de {questoes.length}</h2>
             <h2>Pontuação atual: {pontuacao}</h2>
+           
         </div> 
      );
 }

@@ -5,6 +5,11 @@ import Inicio from './Inicio';
 
 function App() {
 
+  require("./Questoes.css")
+  require("./Inicio.css")
+  require("./Pontuacao.css")
+  require("./Resultado.css")
+
   const [tela, alteraTela] = useState(null)
 
   if(tela == null){

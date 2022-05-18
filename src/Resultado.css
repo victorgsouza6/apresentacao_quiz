@@ -1,0 +1,18 @@
+.resultado-final button{
+    background-color: red;
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    cursor: pointer;
+
+    
+
+}
+
+.resultado-final button:hover{
+    background-color: rgb(146, 28, 28);
+}
+
+.resultado-final{
+    padding-top: 100px;
+}

@@ -1,0 +1,35 @@
+.inicio{
+    margin: 0 auto;
+    background-color: rgb(47, 47, 121);
+    padding: 45px;
+    border-radius: 16px;
+    color: black;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    width: 43%;
+    height: 470px;
+    background-image: url(https://t.ctcdn.com.br/E53egvytBtAQZF9jWrq01fSLU5g=/0x74:1000x637/1000x563/smart/i327559.jpeg);
+
+
+}
+background-image{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+.botaoInicio{
+    margin-top: 560px;
+    padding: 20px;
+    cursor: pointer;
+    background-color: rgb(75, 75, 175);
+    border-radius: 15px;
+    color: white;
+}
+
+.botaoInicio:hover{
+    background-color: rgb(47, 47, 121);
+}
+
+.iniciar h1{
+    color: white;
+}
