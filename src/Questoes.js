@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Pontuacao from './Pontuacao';
 import Resultado from './Resultado'
+import { ToastContainer, toast } from 'react-toastify';
 
 const Questoes = (props) => {
     const alteraTela = props.alteraTela
@@ -14,7 +15,7 @@ const Questoes = (props) => {
       {
             
         text: "Qual é o primeiro filme da disney?",
-        imagem: "https://www.comboinfinito.com.br/principal/wp-content/uploads/2020/08/Pinocchio-2.jpg",
+        imagem: "https://i.imgur.com/90CfxQl.png",
         opcoes: [
           {p:0, text: "Pinocchio", isCorrect: false},
           {p:1, text: "Branca de neve", isCorrect: true},
@@ -40,7 +41,7 @@ const Questoes = (props) => {
       ],
   },{
     text: "Qual foi o primeiro solo da disney ?",
-    imagem: "https://ichef.bbci.co.uk/news/640/amz/worldservice/live/assets/images/2015/03/13/150313095713_frozen_624x351_ap.jpg",
+    imagem: "https://i.imgur.com/fLatTOW.png",
     opcoes: [
       {p:0, text: "Quando a minha vida vai começar", isCorrect: false},
       {p:1, text: "Livre estou", isCorrect: false},
@@ -48,7 +49,7 @@ const Questoes = (props) => {
     ],
 },{
       text: "Qual é o nome do pai da Bela?",
-      imagem: "https://zh.rbsdirect.com.br/imagesrc/23130689.jpg?w=580",
+      imagem: "https://i.imgur.com/SUDqNGh.png",
       opcoes: [
         {p:0, text: "Maurice", isCorrect: true},
         {p:1, text: "John", isCorrect: false},
@@ -66,7 +67,7 @@ const Questoes = (props) => {
 },
 {
   text: "Qual é o nome da Pequena Sereia? ",
-  imagem: "https://cdn.falauniversidades.com.br/wp-content/uploads/2020/05/14180242/A-pequena-sereia-1.jpg",
+  imagem: "https://i.imgur.com/TWc01jz.png",
   opcoes: [
     {p:0, text: "Bela", isCorrect: false},
     {p:1, text: "Carly", isCorrect: false},
@@ -75,7 +76,7 @@ const Questoes = (props) => {
 },
 {
   text: "Quantos anos tinha Cinderela quando se casou? ",
-  imagem: "http://pm1.narvii.com/6282/b710529142f96e947a9b40d4619e05d69c61382c_00.jpg",
+  imagem: "https://www.notibras.com/site/wp-content/uploads/2020/07/9b213e3cad.jpg",
   opcoes: [
     {p:0, text: "19", isCorrect: true},
     {p:1, text: "18", isCorrect: false},
@@ -111,7 +112,7 @@ const Questoes = (props) => {
 },
 {
   text: "Qual o nome completo do fundador da disney? ",
-  imagem: "https://t.ctcdn.com.br/bhQV-SNDQMGe545d-owclr2njck=/400x400/smart/filters:format(webp)/i490908.jpeg",
+  imagem: "https://d5y9g7a5.rocketcdn.me/wp-content/uploads/2017/12/03-10.jpg",
   opcoes: [
     {p:0, text: "Walt Disney", isCorrect: false},
     {p:1, text: "Walter Elias Disney", isCorrect: true},
@@ -120,7 +121,7 @@ const Questoes = (props) => {
 },
 {
   text: "E com quantos anos ele morreu? ",
-  imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEVqEMOJMRYddaNSJYZ8n77NJU1Ad0L0M3Ig&usqp=CAU",
+  imagem: "https://www.ofuxico.com.br/img/upload/noticias/2019/12/05/partners_magic_kingdom_365485_36.jpg",
   opcoes: [
     {p:0, text: "67", isCorrect: false},
     {p:1, text: "78", isCorrect: false},
@@ -138,7 +139,7 @@ const Questoes = (props) => {
 },
 {
   text: "Qual é o nome do principe de Pocahontas? ",
-  imagem: "https://i.pinimg.com/originals/80/05/3c/80053c37e0aaa75be68f54dd394be57e.jpg",
+  imagem: "https://www.criatives.com.br/wp-content/uploads/2018/07/10-detalles-de-la-verdadera-historia-de-pocahontas-que-disney-decidio-dejar-fuera-de-la-pelicula-1518608415.jpg",
   opcoes: [
     {p:0, text: "John Smith", isCorrect: true},
     {p:1, text: "Eric Miller", isCorrect: false},
@@ -147,7 +148,7 @@ const Questoes = (props) => {
 },
 {
   text: "Em qual aniversário Aurora espetaria o dedo? ",
-  imagem: "https://cdn.falauniversidades.com.br/wp-content/uploads/2021/04/08130214/aurora-460x345.jpg",
+  imagem: "https://www.abcdobebe.com/wp-content/uploads/2011/05/A-Bela-adormecida.jpg",
   opcoes: [
     {p:0, text: "Aniversario de 15 anos", isCorrect: false},
     {p:1, text: "Aniversário de 16 anos", isCorrect: true},
@@ -156,7 +157,7 @@ const Questoes = (props) => {
 },
 {
   text: "Qual é o nome completo de Mulan? ",
-  imagem: "https://lumiere-a.akamaihd.net/v1/images/6785e7fe5d2a95c44462054900c791b4_2764x4096_452f56a9.png?region=0%2C0%2C2764%2C4096",
+  imagem: "https://www.rbsdirect.com.br/imagesrc/17314778.jpg?w=700",
       opcoes: [
         {p:0, text: "Fa Mulan", isCorrect: true},
         {p:1, text: "Fan Mulan", isCorrect: false},
@@ -165,7 +166,7 @@ const Questoes = (props) => {
     },
       {
     text: "Qual é o nome da mãe de Nala ? ",
-    imagem: "http://images6.fanpop.com/image/quiz/1044000/1044938_1380602163274_318_300.png",
+    imagem: "https://i.imgur.com/DGri9wd.png",
     opcoes: [
       {p:0, text: "Sarabi", isCorrect: false},
       {p:1, text: "Sarafina", isCorrect: true},
@@ -183,7 +184,7 @@ const Questoes = (props) => {
     },
     {
     text: "Qual é a única princesa da disney que foi inspirada em uma pessoa real? ",
-    imagem: "https://img.quizur.com/f/img5fa6ea14604370.65545207.jpg?lastEdited=1604774429",
+    imagem: "https://i.imgur.com/6wprHrA.png",
     opcoes: [
       {p:0, text: "Megara", isCorrect: false},
       {p:1, text: "Pocahontas", isCorrect: true},
@@ -237,7 +238,7 @@ const Questoes = (props) => {
     },
     {
       text: "No conto original, do que era feito o sapatinho da cinderela ? ",
-    imagem: "https://st.depositphotos.com/1000792/4691/v/600/depositphotos_46919567-stock-illustration-crystal-cinderellas-slipper-on-blue.jpg",
+    imagem: "https://i.imgur.com/IQAG4Zq.png",
     opcoes: [
       {p:0, text: "Diamante", isCorrect: false},
       {p:1, text: "Cristal", isCorrect: true},
@@ -287,41 +288,41 @@ const Questoes = (props) => {
 
   
 
-
+  
 
 
     const  verificaResposta = (isCorrect) => {
-
+      
       if( isCorrect){
         setPontuacao(pontuacao + 1);
       }
-      
+ 
       if (perguntaAtual + 1 < questoes.length){
         setPerguntaAtual(perguntaAtual + 1 );
       }else{
           alteraTela(<Resultado alteraTela={alteraTela} pontuacao={ pontuacao } questoes={questoes} isCorrect={isCorrect} />)
       }
-
+     
          
     }
+ 
        
     return ( 
       <div className='cartao-pergunta'>
         <Pontuacao pontuacao={pontuacao} questoes={questoes} perguntaAtual={perguntaAtual}/>
         <div>
             
-            
+           
             <img src={questoes[perguntaAtual].imagem}/>
 
             <h3 className='texto-pergunta'>{questoes[perguntaAtual].text}</h3>
-
             <ul>
              {questoes[perguntaAtual].opcoes.map((opcao => {
         return (
           
             <div>
               
-            <li className='perguntas' onClick={() => verificaResposta(opcao.isCorrect)} key={opcao.p} >{opcao.text}</li>
+            <li onClick={() => verificaResposta(opcao.isCorrect)} key={opcao.p} >{opcao.text}</li>
             </div>
            
           

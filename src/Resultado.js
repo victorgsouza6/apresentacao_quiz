@@ -19,7 +19,7 @@ const Resultado = (props) => {
     return ( 
         <div className='resultado-final'>
             <div className='final'>
-                <img src='http://d20inc.com.br/wp-content/uploads/2016/03/disney-characters-header-image.jpg' />
+                <img src='https://i.imgur.com/sEFPtu4.png' />
             </div>
             <h1>Resultado Final</h1>
             <h2>{pontuacao} de {questoes.length} Corretas -  ({resultado}%)</h2> 

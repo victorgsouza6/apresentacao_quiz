@@ -11,6 +11,7 @@ img{
 .cartao-pergunta li{
     list-style-type: none;
     background-color: rgb(48, 48, 185);
+    transition: 0.3s;
     color: white;
     padding: 16px;
     margin-left: 0.6px;
@@ -27,6 +28,7 @@ img{
 .cartao-pergunta{
     margin: 0 auto;
     background-color: rgb(47, 47, 121);
+
     padding: 16px;
     border-radius: 16px;
     color: black;
@@ -52,5 +54,10 @@ ul{
 .quiz{
     display: flex;
     justify-content: space-between;
+}
+
+.correto{
+    background-color: green;
+    transform: 0.5s;
 }
 
