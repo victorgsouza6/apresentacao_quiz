@@ -8,7 +8,6 @@ const Questoes = (props) => {
     
     const [perguntaAtual, setPerguntaAtual] = useState(0) 
     const [pontuacao, setPontuacao] = useState(0)
-
     
 
     const questoes = [
@@ -273,7 +272,7 @@ const Questoes = (props) => {
     ],
     },
     {
-      text: "Qual era o nome da garotinha a quem Andy deu todos os seus brinquedos no final de Toy Story 3? ?",
+      text: "Qual era o nome da garotinha a quem Andy deu todos os seus brinquedos no final de Toy Story 3 ?",
     imagem: "https://lumiere-a.akamaihd.net/v1/images/eu_ts4_trailer-freedom_dft_m_cda5a9b4.jpeg?region=0,0,800,600",
     opcoes: [
       {p:0, text: "Estella", isCorrect: true},
@@ -302,7 +301,7 @@ const Questoes = (props) => {
       }else{
           alteraTela(<Resultado alteraTela={alteraTela} pontuacao={ pontuacao } questoes={questoes} isCorrect={isCorrect} />)
       }
-     
+
          
     }
  
@@ -320,10 +319,9 @@ const Questoes = (props) => {
              {questoes[perguntaAtual].opcoes.map((opcao => {
         return (
           
-            <div>
-              
+          
             <li onClick={() => verificaResposta(opcao.isCorrect)} key={opcao.p} >{opcao.text}</li>
-            </div>
+          
            
           
           )

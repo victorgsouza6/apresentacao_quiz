@@ -23,6 +23,7 @@ const Resultado = (props) => {
             </div>
             <h1>Resultado Final</h1>
             <h2>{pontuacao} de {questoes.length} Corretas -  ({resultado}%)</h2> 
+            <h1> Obrigado por jogar!</h1>
             <button className="refazer" onClick={() => alteraTela(<Inicio alteraTela={alteraTela}/>)}> Refazer </button>
         </div>
      );

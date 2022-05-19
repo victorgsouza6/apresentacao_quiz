@@ -19,6 +19,10 @@ img{
     font-size: 20px;
     margin-top: 8px;
     cursor: pointer;
+    -webkit-user-select: none;  
+    -moz-user-select: none;    
+    -ms-user-select: none;      
+    user-select: none;
     
 }
 .cartao-pergunta li:hover{
@@ -56,8 +60,5 @@ ul{
     justify-content: space-between;
 }
 
-.correto{
-    background-color: green;
-    transform: 0.5s;
-}
+
 
